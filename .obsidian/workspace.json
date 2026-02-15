@@ -39,26 +39,30 @@
             "id": "69f51d4b551576f6",
             "type": "leaf",
             "state": {
+              "type": "terminal:documentation",
+              "state": {
+                "terminal:documentation": {
+                  "data": "# Terminal for Obsidian [![release](https://img.shields.io/github/v/release/polyipseity/obsidian-terminal)][latest release] [![Obsidian downloads](https://img.shields.io/badge/dynamic/json?logo=Obsidian&color=%238b6cef&label=downloads&query=$[\"terminal\"].downloads&url=https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugin-stats.json)][community plugin] [![Python](https://img.shields.io/badge/Python-≥3.10-gold?labelColor=blue&logo=Python&logoColor=white)][Python]\n\n[Buy Me a Coffee]: https://buymeacoffee.com/polyipseity\n[Buy Me a Coffee/embed]: https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=polyipseity&button_colour=40DCA5&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00\n[Obsidian]: https://obsidian.md/\n[Python]: https://python.org/downloads/\n[changelog]: https://github.com/polyipseity/obsidian-terminal/blob/main/CHANGELOG.md\n[community plugin]: https://obsidian.md/plugins?id=terminal\n[latest release]: https://github.com/polyipseity/obsidian-terminal/releases/latest\n[repository]: https://github.com/polyipseity/obsidian-terminal\n[trailer]: https://raw.githubusercontent.com/polyipseity/obsidian-terminal/main/assets/trailer.png\n[related]: https://github.com/polyipseity/obsidian-monorepo\n\nIntegrate consoles, shells, and terminals inside [Obsidian].\n\n[![Buy Me a Coffee/embed]][Buy Me a Coffee]\n\n__[Repository] · [Changelog] · [Community plugin] · [Related] · [Features](#features) · [Installation](#installation) · [Usage](#usage) · [Contributing](#contributing) · [Security](#security)__\n\n![Trailer]\n\nFor first time users, read the [installation](#installation) section first!\n\nThis file is automatically opened on first install. You can reopen it in settings or command palette.\n\n## Features\n\n- Start external terminals from Obsidian.\n- Integrate terminals into Obsidian.\n- Has an emulated developer console usable on all platforms.\n- Supports multiple terminal profiles.\n- Has built-in keyboard shortcuts.\n- Automatically save and restore integrated terminal history.\n- Find in terminal.\n- Save terminal history as file.\n- Customize terminal appearance.\n\n## Installation\n\n1. Install plugin.\n    - Community plugins\n        1. Install the [plugin][community plugin] from community plugins directly.\n    - Manual\n        1. Create directory `terminal` under `.obsidian/plugins` of your vault.\n        2. Place `manifest.json`, `main.js`, and `styles.css` from the [latest release] into the directory.\n    - Building (rolling)\n        1. Clone this repository, including its submodules.\n        2. Install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).\n        3. Run `npm install` in the root directory.\n        4. Run `npm run obsidian:install <vault directory>` in the root directory.\n    - [Obsidian42 - BRAT](https://obsidian.md/plugins?id=obsidian42-brat) (rolling)\n        - See [their readme](https://github.com/TfTHacker/obsidian42-brat#readme).\n2. (optional for Windows, recommended) Install Python and dependencies.\n    1. Install [Python] 3.10/+.\n    2. (Windows only) Run `pip3 install psutil==5.9.5 pywinctl==0.0.50 typing_extensions==4.7.1`. <!-- Update `README.md`, `magic.ts`, and `requirements.txt` together. -->\n    3. Configure Python executable in profile settings. Press the \"Check\" button to validate the Python configuration. Each profile needs to be configured separately.\n3. Enable plugin.\n4. (optional) Configure plugin settings.\n\n## Usage\n\n- To start a new external or integrated terminal\n  - Ribbon\n      1. Click on the `Open terminal` ribbon.\n      2. Choose the desired profile.\n  - Context menu\n      1. Right-click on files, folders, or tab headers.\n      2. Choose the desired action \\(and profile\\).\n  - Command palette\n      1. Press `Ctrl`+`P` or click on the `Open command palette` ribbon next to the left window border.\n      2. Choose the desired action \\(and profile\\).\n  - Select profile modal\n      1. Choose the desired profile. Press `Ctrl` to edit the profile before use. The item `(Temporary profile)` starts a terminal with a temporary profile.\n- To save and restore integrated terminal history\n    1. Keep the terminal open when exiting Obsidian.\n    2. Terminal history will be restored next time Obsidian is opened.\n- Additional actions\n  - Includes\n    - Clear terminal: \\(1\\), \\(4\\)\n    - Copy terminal: \\(1\\)\n    - Edit terminal: \\(1\\)\n    - Export, import, or edit settings: \\(2\\), \\(3\\)\n    - Find in terminal: \\(1\\), \\(4\\)\n    - Open documentation: \\(2\\), \\(3\\)\n    - Restart terminal: \\(1\\)\n    - Save terminal history: \\(1\\)\n  - Available by\n    - \\(1\\) Right-click on tab header/`More options`\n    - \\(2\\) Open settings\n    - \\(3\\) Open command palette\n    - \\(4\\) Use keyboard shortcuts\n\n### Keyboard shortcuts\n\nThe keyboard shortcuts can be customized in hotkeys settings.\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Global__\n\n- Toggle focus on last terminal: `Ctrl`+`Shift`+`` ` ``\n  - Focus on last terminal: \\(unbound; useful if you want separate keys for focus and unfocus\\)\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Terminal is focused__\n\nWhen a terminal is focused, other keyboard shortcuts \\(including Obsidian and plugin hotkeys\\) are disabled. Only the following keyboard shortcuts work. Thus you can ignore Obsidian complaining about conflicting keys for the following keyboard shortcuts.\n\n- Clear terminal: `Ctrl`+`Shift`+`K`, `Command`+`Shift`+`K` \\(Apple\\)\n- Close terminal: `Ctrl`+`Shift`+`W`, `Command`+`Shift`+`W` \\(Apple\\)\n- Find in terminal: `Ctrl`+`Shift`+`F`, `Command`+`Shift`+`F` \\(Apple\\)\n- Toggle focus on last terminal: `Ctrl`+`Shift`+`` ` `` \\(same as above\\)\n  - Unfocus terminal: \\(unbound; useful if you want separate keys for focus and unfocus\\)\n\n### Theming\n\nTheming is possible. However, there is no user-friendly interface for now.\n\n1. Open the profile editing modal.\n2. Click on the `Edit` button labeled `Data`. It should open up a new modal in which there is a large textbox.\n3. Notice `terminalOptions` in the text area labeled `Data`. Refer to the [`xterm.js` documentation](https://github.com/xtermjs/xterm.js/blob/master/typings/xterm.d.ts#L26) (`ITerminalOptions`) to set the options. Nested objects may need to be used.\n4. Save the profile. Changes should apply immediately.\n\n### Profiles\n\nThis plugin comes with several profile presets that you can reference.\n\nWhen setting up a terminal profile, you need to distinguish between shells and terminal emulators. (Search online if needed.) Generally, integrated profiles only work with shells while external ones only work with terminal emulators.\n\n#### Examples\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Shells__\n\n- Bash: `bash --login`\n- Bourne shell: `sh`\n- Command Prompt: `cmd`\n- Dash: `dash`\n- Git Bash: `<Git installation>\\bin\\bash.exe --login` (e.g. `C:\\Program Files\\Git\\bin\\bash.exe`)\n- PowerShell Core: `pwsh`\n- Windows PowerShell: `powershell`\n- Windows Subsystem for Linux: `wsl` or `wsl -d <distribution name>`\n- Z shell: `zsh --login`\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Terminal emulators__\n\n- Command Prompt: `cmd`\n- GNOME Terminal: `gnome-terminal`\n- Konsole: `konsole`\n- Terminal (macOS): `/System/Applications/Utilities/Terminal.app/Contents/macOS/Terminal \"$PWD\"`\n- Windows Terminal: `wt`\n- iTerm2: `/Applications/iTerm.app/Contents/MacOS/iTerm2 \"$PWD\"`\n- xterm: `xterm`\n\n### Miscellaneous\n\nThis plugin patches `require` so that `require(\"obsidian\")` and other Obsidian modules work in the developer console. It is toggleable as `Expose internal modules` in settings.\n\nIn the developer console, a context variable `$$` is passed into the code, which can be used to dynamically change terminal options.\n\nThe full API is available from [`src/@types/obsidian-terminal.ts`](src/%40types/obsidian-terminal.ts).\n\n### Troubleshooting\n\n- Is the plugin useful on mobile?\n  - Compared to on desktop, it is much less useful. The only use for it for now is opening a developer console on mobile.\n- Why do hotkeys not work?\n  - If the terminal is in focus, all Obsidian hotkeys are disabled so that you can type special characters into the terminal. You can unfocus the terminal by pressing `Ctrl`+`Shift`+`` ` ``, then you can use Obsidian hotkeys again.\n\n## Contributing\n\nContributions are welcome!\n\nThis project uses [`changesets`](https://github.com/changesets/changesets) to manage the changelog. When creating a pull request, please [add a changeset](https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md#adding-changesets) describing the changes. Add multiple changesets if your pull request changes several things. End each changeset with `([PR number](PR link) by [author username](author link))`. For example, the newly created file under the directory `.changeset` should look like:\n\n```Markdown\n---\n\"example\": patch\n---\n\nThis is an example change. ([GH#1](https://github.com/ghost/example/pull/1) by [@ghost](https://github.com/ghost))\n```\n\n### Todos\n\nThe todos here, ordered alphabetically, are things planned for the plugin. There are no guarantees that they will be completed. However, we are likely to accept contributions for them.\n\n- Connect to remote shells.\n- Detect sandboxed environment and notify users.\n- External link confirmation.\n- Filter console log by severity in the developer console.\n- Indicate that the terminal resizer has crashed or is disabled.\n- Shared terminal tabs.\n- Vim mode switch.\n\n### Translating\n\nSee [`assets/locales/README.md`](assets/locales/README.md).\n\n## Security\n\nWe hope that there will never be any security vulnerabilities, but unfortunately it does happen. Please [report](#reporting-a-vulnerability) them!\n\n### Supported versions\n\n| Version  | Supported |\n| -------- | --------- |\n| rolling  | ✅        |\n| latest   | ✅        |\n| outdated | ❌        |\n\n### Reporting a vulnerability\n\nPlease report a vulnerability by opening an new issue. We will get back to you as soon as possible.\n",
+                  "displayTextI18nKey": "translation:generic.documentations.readme",
+                  "iconI18nKey": "asset:generic.documentations.readme-icon"
+                }
+              },
+              "icon": "file-question",
+              "title": "Readme"
+            }
+          },
+          {
+            "id": "52038c98858b40c8",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/bath_pilgrimage_200_ranked.md",
+                "file": "10. Project/11. dgng/contents/curation/명절 떡&과자 선물 추천.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bath_pilgrimage_200_ranked"
-            }
-          },
-          {
-            "id": "fda38bcd002c265d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "title": "명절 떡&과자 선물 추천"
             }
           }
         ],
@@ -242,53 +246,53 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "fda38bcd002c265d",
+  "active": "52038c98858b40c8",
   "lastOpenFiles": [
-    "10. Project/11. dgng/contents/curation/죽기 전에 가봐야할 사우나 2",
     "10. Project/11. dgng/strategy/[유겐_작성]_참고_브랜드_리서치.md",
     "10. Project/11. dgng/strategy/[유겐_작성]_글로벌_PB_브랜드_리서치_심화.md",
-    "10. Project/11. dgng/strategy/[유겐_작성]_dgng_전략_문서집_2026.md",
-    "10. Project/11. dgng/strategy/PB_중심_성장_전략_2026.md",
+    "10. Project/11. dgng/contents/backlogs.md",
     "10. Project/11. dgng/contents/newsletter/Week 5 - 콘텐츠가 아닌 캐릭터.md",
-    "10. Project/11. dgng/contents/curation/죽기 전에 가봐야할 사우나/레퍼런스.md",
-    "10. Project/11. dgng/contents/curation/죽기 전에 가봐야할 사우나/1 . 산 속에 파묻힌 떼르메 발스..md",
-    "10. Project/11. dgng/contents/curation/죽기 전에 가봐야할 사우나",
     "10. Project/11. dgng/contents/curation/명절 떡&과자 선물 추천.md",
-    "10. Project/11. dgng/contents/curation",
-    "율무/협업_칸반.md",
-    "율무/전략_수정안_2026-02-01.md",
-    "율무/실전_검증_로드맵_FactPick.md",
-    "율무/신사업_FactPick_수익화_로드맵.md",
-    "율무/dgng_관찰기_01_물건과_삶의_간극.md",
-    "90. Settings/91. Attachments/Pasted image 20260203172457.png",
-    "10. Project/11. dgng/strategy/인스타그램 콘텐츠 전략 검토 [AI].md",
-    "10. Project/11. dgng/strategy/브랜드 세계관 정의 후보 [AI].md",
+    "10. Project/11. dgng/0. Index.md",
+    "10. Project/11. dgng/strategy/[유겐_작성]_dgng_전략_문서집_2026.md",
+    "10. Project/11. dgng/strategy/dgng_전략_문서집_2026.md",
+    "10. Project/11. dgng/strategy/PB_중심_성장_전략_2026.md",
     "10. Project/11. dgng/strategy/dgng 본질 분석 [AI].md",
-    "10. Project/11. dgng/contents/티 컵 프로젝트/티컵 티져.md",
+    "10. Project/11. dgng/contents/curation",
+    "20. Life/Account.md",
+    "10. Project/yugenbot/onboarding.md",
+    "10. Project/11. dgng/contents/archive/10년 쓸 수 있는 에피큐리언 도마.md",
+    "10. Project/11. dgng/strategy/브랜드 세계관 정의 후보 [AI].md",
     "10. Project/11. dgng/contents/티 컵 프로젝트/1화.md",
-    "10. Project/11. dgng/contents/티 컵 프로젝트",
-    "10. Project/11. dgng/contents/dgng-backup.csv",
-    "10. Project/11. dgng/contents/archive/휴대하기 좋은 루미큐브 퍼니백 [AI].md",
+    "10. Project/11. dgng/strategy/인스타그램 콘텐츠 전략 검토 [AI].md",
+    "10. Project/11. dgng/contents/archive/딱 적당한 소독제, 온비6.0 퓨로메디 [AI].md",
     "10. Project/11. dgng/contents/archive/휴대용 칫솔살균기, 울트라웨이브 [AI].md",
-    "10. Project/11. dgng/contents/archive/휴대용 얼룩 제거제, 타이드 투고 펜 [AI].md",
-    "10. Project/11. dgng/contents/archive/휴대용 높낮이 조절 노트북 스탠드, 루스트 [AI].md",
-    "10. Project/11. dgng/contents/archive/휴대를 위한 멀티탭, 브런트 코드 [AI].md",
-    "10. Project/11. dgng/contents/archive/환절기 수납 박스, 페르클라 [AI].md",
-    "10. Project/11. dgng/contents/archive/형광등 없는 공간을 위한 첫걸음, 이케아 노트 플루어 스탠드 [AI].md",
+    "10. Project/11. dgng/contents/archive/저렴하지만 충분한, 이케아 람판 [AI].md",
+    "10. Project/11. dgng/contents/archive/아름답고 편리한 식탁 위의 클래식, 스텔톤 EM77 [AI].md",
+    "10. Project/11. dgng/contents/archive/양손과 주머니가 가벼운 러닝을 위한 준비물, 플립 벨트 [AI].md",
+    "10. Project/11. dgng/contents/archive/할 일 관리를 위한 단 하나의 앱, Things 3 [AI].md",
+    "10. Project/11. dgng/contents/archive/직장에서 1년 넘게 쓰는 펜, BLEN [AI].md",
+    "10. Project/11. dgng/contents/archive/개인화된 수련, 다운독 요가 [AI].md",
+    "10. Project/11. dgng/contents/archive/자석과 클립을 동시에, 쿵스포르스 자석클립 [AI].md",
+    "10. Project/11. dgng/contents/archive/쓱쓱 갈아내는 쾌감, 마이크로플레인 제스터 [AI].md",
+    "10. Project/11. dgng/contents/dgng-backup.csv",
+    "90. Settings/91. Attachments/Pasted image 20260203172457.png",
+    "10. Project/11. dgng/contents/티 컵 프로젝트",
+    "10. Project/11. dgng/contents/티컵 티져",
+    "90. Settings/91. Attachments/Pasted image 20260201121206.png",
+    "90. Settings/91. Attachments/Pasted image 20260201112009.png",
+    "90. Settings/91. Attachments/A5AF4447-F93C-4385-B6A8-236E0B86E549_1_102_o.jpeg",
+    "90. Settings/91. Attachments/61516820-8C81-4C39-81A5-3BD33DD9A343_1_102_o.jpeg",
+    "90. Settings/91. Attachments/73C3BEDE-C541-4377-B152-5F78ABD759E0_1_102_o.jpeg",
     "율무",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.51.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.48.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.38.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.18.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.54.31.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.54.25.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.54.03.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.53.58.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.51.10.png",
+    "10. Project/yugenbot",
+    "10. Project/11. dgng/contents/learning",
+    "10. Project/11. dgng/contents/curation/죽기 전에 가봐야할 사우나",
+    "90. Settings/91. Attachments/Pasted image 20260129220407.png",
+    "10. Project/13. 건강한프랭크/Archives/시리즈2 (1).pdf",
     "90. Settings/91. Attachments/2026년 정책자금 온라인 신청 매뉴얼(기업용).pdf",
-    "90. Settings/91. Attachments",
-    "90. Settings",
-    "20. Life",
-    "10. Project/yugenbot"
+    "90. Settings/91. Attachments/Pasted image 20260125075508.png",
+    "90. Settings/91. Attachments/Pasted image 20260123204612.png",
+    "90. Settings/91. Attachments/Pasted image 20260123203914.png"
   ]
 }
