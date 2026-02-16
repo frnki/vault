@@ -60,9 +60,37 @@
               "icon": "lucide-book-up",
               "title": "Release Notes 1.11.7"
             }
+          },
+          {
+            "id": "9b704be83ecb37d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10. Project/11. dgng/contents/curation/100만원 이상 플루어 스탠드.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "100만원 이상 플루어 스탠드"
+            }
+          },
+          {
+            "id": "9db1f1e0f87e0663",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10. Project/11. dgng/contents/curation/100만원 이상 플루어 스탠드.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "100만원 이상 플루어 스탠드"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -119,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5026054382324
+    "width": 426.5026054382324
   },
   "right": {
     "id": "2d360eb7c2f859eb",
@@ -235,60 +263,56 @@
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
       "obsidian-kanban:Create new board": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Lookup: Open lookup view": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "copilot:Open Copilot Chat": false,
       "terminal:Open terminal": false
     }
   },
-  "active": "fda38bcd002c265d",
+  "active": "9db1f1e0f87e0663",
   "lastOpenFiles": [
-    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/레퍼런스.md",
-    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/1 . 산 속에 파묻힌 떼르메 발스..md",
-    "10. Project/11. dgng/contents/10년 쓸 수 있는 에피큐리언 도마.md",
+    "10. Project/11. dgng/contents/curation/100만원 이상 플루어 스탠드.md",
+    "10. Project/11. dgng/contents/curation/100만원 이하 테이블 램프.md",
+    "10. Project/11. dgng/contents/curation/100만원 이상 테이블 램프.md",
+    "10. Project/11. dgng/contents/curation/100만원 이하 플루어 스탠드.md",
+    "20. Life/21. Daily/2026-02-16.md",
+    "20. Life/Kanban.md",
+    "weekly/Week 5.md",
+    "weekly/Week 4.md",
+    "weekly/Week 3.md",
+    "Pi Academy/state.md",
+    "10. Project/threadcoupas/계정 목록.md",
     "10. Project/yugenbot/onboarding.md",
-    "00. Inbox/문샷, 일론 머스크, 피터 디아만디스, 데이브 블런딘 대담 - 일론이 말하는 풍요, AI 그.md",
-    "20. Life/Account.md",
-    "00. Inbox/문샷, 일론 머스크, 피터 디아만디스, 데이브 블런딘 대담 - 일론이 말하는 풍요, AI 그 4.md",
-    "00. Inbox/01. clippings/노말부터 헬 클리어까지 !! 래더 13기 악마술사 맨땅 이렇게 따라만 하세요 !! 【디아블로2 레.md",
-    "00. Inbox/01. clippings/summarize.md",
-    "00. Inbox/01. clippings/X post by Nutty (@NuttyCLD) - 2026-02-13.md",
-    "00. Inbox/01. clippings/Clippings.md",
-    "00. Inbox/01. clippings/AI 반도체 '속도전' 끝났다… 이제는 '토큰당 비용' 90% 줄이는 놈이 승자 - 글로벌이코노.md",
-    "00. Inbox/01. clippings/1부_ 기판의 시대 - 모래의 제국, 다시 유리 위로.md",
+    "30. Resources/Agent Index.md",
+    "30. Resources/OpenClaw/45_Canvas_운영대시보드와리포트자동화.md",
+    "30. Resources/Design Masters/14_Louis_Kahn_루이스칸.md",
+    "10. Project/11. dgng/contents/backlogs.md",
+    "10. Project/11. dgng/contents/curation/스펀지.md",
+    "10. Project/11. dgng/contents/curation/야채탈수기.md",
+    "30. Resources/Brand Masters/03_TRUCK_Bird_Osaka.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/55. 라우하니엠 민속 스파.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/44. 아아 함맘.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/40. 함맘 다르 엘 바샤.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/39. 시부 온천 카나구야.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/1 . 산 속에 파묻힌 떼르메 발스..md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/moulay_yacoub_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/jiaoxi_hot_spring_onion_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/spreewald_therme_main.png",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/hakone_onsen_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/ruisui_hot_springs_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/rajaportti_sauna_main.png",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/82. 타미나 테름.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/beer_spa_prague_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/zaborin_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/tsurunoyu_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images/glenwood_hot_springs_main.jpg",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/83. 츠키오카 온천.md",
+    "10. Project/11. dgng/contents/죽기 전에 가봐야할 사우나/images",
+    "Lessons",
+    "Pi Academy",
     "00. Inbox/01. clippings",
-    "00. Inbox/01. clipping_archive.md",
-    "30. Resources/OpenClaw/42_message-tool_알림-운영자동화.md",
-    "30. Resources/OpenClaw/41_게이트웨이_운영_설정패치_재시작.md",
-    "30. Resources/OpenClaw/40_세션_오케스트레이션_sessions_spawn.md",
-    "30. Resources/OpenClaw/39_노드+Cron_런북_현장_점검복구_정시_자동화.md",
-    "30. Resources/OpenClaw/38_노드_원격실행-알림.md",
-    "30. Resources/OpenClaw/37_브라우저자동화_BrowserTool.md",
-    "30. Resources/OpenClaw/36_cron_운영자동화.md",
-    "30. Resources/OpenClaw/35_에이전틱 Evals_자동 채점과 품질 게이트.md",
-    "30. Resources/OpenClaw/34_에이전틱-리플렉션.md",
-    "30. Resources/OpenClaw/33_Agentic_Orchestration.md",
-    "30. Resources/OpenClaw/32_Advanced_Prompting.md",
-    "30. Resources/OpenClaw/31_Prototyping.md",
+    "30. Resources/Design Masters",
     "30. Resources/OpenClaw",
     "30. Resources/Market Briefings",
-    "30. Resources/Design Masters",
     "30. Resources/Brand Masters",
-    "30. Resources",
     "20. Life/21. Daily",
-    "10. Project/yugenbot",
-    "10. Project/11. dgng/contents/dgng-backup 2.csv",
-    "90. Settings/91. Attachments 2",
-    "90. Settings/91. Attachments/Pasted image 20260203172457.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.51.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.48.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.38.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.55.18.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.54.31.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.54.25.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.54.03.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.53.58.png",
-    "90. Settings/91. Attachments/스크린샷 2026-01-22 오후 4.51.10.png"
+    "30. Resources"
   ]
 }

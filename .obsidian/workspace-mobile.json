@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10. Project/11. dgng/strategy/인스타그램 콘텐츠 전략 검토 [AI].md",
+                "file": "30. Resources/Design Masters/13_Frank_Lloyd_Wright_프랭크로이드라이트.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "인스타그램 콘텐츠 전략 검토 [AI]"
+              "title": "13_Frank_Lloyd_Wright_프랭크로이드라이트"
             }
           }
         ],
@@ -184,10 +184,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Lookup: Open lookup view": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "copilot:Open Copilot Chat": false,
       "terminal:Open terminal": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -202,8 +198,11 @@
   },
   "active": "29a04fa34dd59f54",
   "lastOpenFiles": [
-    "10. Project/11. dgng/strategy/dgng 본질 분석 [AI].md",
+    "30. Resources/OpenClaw/43_기억시스템-운영_memory_search_memory_get.md",
+    "00. Inbox/01. clippings/Anthropic이 실제로 작동하는 AI 에이전트를 만드는 공식 가이드를 공개했죠. - X.md",
+    "10. Project/11. dgng/contents/newsletter/Week 6 - 내가 고르는 것들.md",
     "10. Project/11. dgng/strategy/인스타그램 콘텐츠 전략 검토 [AI].md",
+    "10. Project/11. dgng/strategy/dgng 본질 분석 [AI].md",
     "율무/dgng_인스타_성장전략_2026-02-01.md",
     "00. Inbox/01. clippings.md",
     "weekly/Week 3.md",
@@ -228,10 +227,7 @@
     "weekly/무제.base",
     "Inbox/NO PRIORS 팟캐스트 추론 모델, 로봇 공학, 그리고 'AI 거품론' 반박 - 엔비디아 젠슨 황 인터ᄇ.md",
     "Inbox/문샷, 일론 머스크, 피터 디아만디스, 데이브 블런딘 대담 - 일론이 말하는 풍요, AI 그 3.md",
-    "Inbox/Vercel, 지난 10년 동안 React  Next.js 최적화하며 쌓은 노하우를 집대성하고 공개한...md",
     "Inbox/DTjbCgOjxQ_",
-    "Inbox/2026 CES NVIDIA Keynote 젠슨 황 (Jensen Huang).md",
-    "Inbox/TIME 올해(2025)의 인물 인터뷰 - NVIDIA 젠슨 황이 논하는 AI 버블, 트럼프, 그리고 중국과의 군비 .md",
     "weekly",
     "dgng/strategy",
     "dgng/contents",
